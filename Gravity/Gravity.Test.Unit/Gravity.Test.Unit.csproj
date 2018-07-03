@@ -46,6 +46,7 @@
     <Reference Include="kCura.Relativity.Client, Version=9.5.162.111, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\Gravity\bin\Debug\kCura.Relativity.Client.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Moq, Version=4.8.0.0, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <HintPath>..\packages\Moq.4.8.2\lib\net45\Moq.dll</HintPath>
     </Reference>
@@ -84,6 +85,7 @@
     <Compile Include="RdoExtensionsTests.cs" />
     <Compile Include="RsapiDaoDeleteTests.cs" />
     <Compile Include="RsapiDaoGetTests.cs" />
+    <Compile Include="SQLDaoGetTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

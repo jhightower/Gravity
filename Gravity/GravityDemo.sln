@@ -7,10 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gravity", "Gravity\Gravity.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gravity.Test", "Gravity.Test\Gravity.Test.csproj", "{5A30BD81-511E-40D3-BA48-08399AE61A7B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gravity.Test.Integration", "Gravity.Test.Integration\Gravity.Test.Integration.csproj", "{7DF2B93B-3B14-45BB-B466-31F5D76E3BA1}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Gravity.Test.Unit", "Gravity.Test.Unit\Gravity.Test.Unit.csproj", "{C0882E20-283A-4CAC-A53C-3512A71127DF}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{90DCFED6-DD82-42CA-8F30-2101DC520FFF}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -34,14 +30,6 @@ Global
 		{5A30BD81-511E-40D3-BA48-08399AE61A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A30BD81-511E-40D3-BA48-08399AE61A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A30BD81-511E-40D3-BA48-08399AE61A7B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7DF2B93B-3B14-45BB-B466-31F5D76E3BA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7DF2B93B-3B14-45BB-B466-31F5D76E3BA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7DF2B93B-3B14-45BB-B466-31F5D76E3BA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7DF2B93B-3B14-45BB-B466-31F5D76E3BA1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C0882E20-283A-4CAC-A53C-3512A71127DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0882E20-283A-4CAC-A53C-3512A71127DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0882E20-283A-4CAC-A53C-3512A71127DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0882E20-283A-4CAC-A53C-3512A71127DF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{217E4D82-69BB-4C22-ABA8-B587B648B30F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{217E4D82-69BB-4C22-ABA8-B587B648B30F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{217E4D82-69BB-4C22-ABA8-B587B648B30F}.Release|Any CPU.ActiveCfg = Release|Any CPU

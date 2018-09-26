@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using Gravity.Test.Helpers;
 using Gravity.Test.TestClasses;
+using GravityDemo.Utils;
 using Relativity.Test.Helpers;
 
 namespace GravityDemo
@@ -10,17 +11,19 @@ namespace GravityDemo
 	{
 		static int Create()
 		{
+			var randomNumber = RandomNumberUtil.RandomNumber();
+
 			var gravityLevel3 = new Gravity.Test.TestClasses.GravityLevel3 {
-				Name = $"GravityLevel3-{Guid.NewGuid()}",
+				Name = $"GravityLevel3-{randomNumber}",
 			};
 
 			var gravityLevel2 = new Gravity.Test.TestClasses.GravityLevel2 {
-				Name = $"GravityLevel2-{Guid.NewGuid()}",
+				Name = $"GravityLevel2-{randomNumber}",
 				GravityLevel3SingleObj = gravityLevel3
 			};
 
 			var gravityLevelOne = new Gravity.Test.TestClasses.GravityLevelOne {
-				Name = $"GravityLevelOne-{Guid.NewGuid()}",
+				Name = $"GravityLevelOne-{randomNumber}",
 				GravityLevel2Obj = gravityLevel2,
 				MultipleChoiceFieldChoices = new[] { MultipleChoiceFieldChoices.MultipleChoice2, MultipleChoiceFieldChoices.MultipleChoice3 }
 			};

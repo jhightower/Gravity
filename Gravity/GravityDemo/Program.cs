@@ -23,7 +23,7 @@ namespace GravityDemo
 			Console.WriteLine("Query GravityLevelOne");
 			Query(newArtifactId);
 			Console.WriteLine("Delete GravityLevelOne");
-			Delete(newArtifactId);
+			Delete();
 
 
 			Console.WriteLine("Press any key to exit.");

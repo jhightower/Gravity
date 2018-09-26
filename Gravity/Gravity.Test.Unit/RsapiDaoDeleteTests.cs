@@ -33,12 +33,6 @@ namespace Gravity.Test.Unit
 			mockProvider = new Mock<IRsapiProvider>(MockBehavior.Strict);
 		}
 
-		[SetUp]
-		public void End()
-		{
-			mockProvider.VerifyAll();
-		}
-
 		[Test]
 		public void Delete_NoRecursion_NoChildObjects()
 		{
@@ -116,6 +110,6 @@ namespace Gravity.Test.Unit
 		}
 
 		private void ExecuteDelete(ObjectFieldsDepthLevel depthLevel)
-			=> new RsapiDao(mockProvider.Object).Delete<GravityLevelOne>(rootId, depthLevel);
+			=> new RsapiDao(mockProvider.Object, null).Delete<GravityLevelOne>(rootId, depthLevel);
 	}
 }

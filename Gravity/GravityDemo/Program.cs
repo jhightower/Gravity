@@ -23,7 +23,7 @@ namespace GravityDemo
 			Console.WriteLine("Query GravityLevelOne");
 			Query(newArtifactId);
 			Console.WriteLine("Delete GravityLevelOne");
-			Delete();
+			Delete(newArtifactId);
 
 
 			Console.WriteLine("Press any key to exit.");
@@ -38,7 +38,7 @@ namespace GravityDemo
 			var settings = new Gravity.Utils.InvokeWithRetrySettings(1, 1000);
 			var invokeWithRetryService = new Gravity.Utils.InvokeWithRetryService(settings);
 			var rsapiProvider = new Gravity.DAL.RSAPI.RsapiProvider(helper.GetServicesManager(), ExecutionIdentity.System, invokeWithRetryService, workspaceId ,1000);
-			rsapiDao = new Gravity.DAL.RSAPI.RsapiDao(rsapiProvider);
+			rsapiDao = new Gravity.DAL.RSAPI.RsapiDao(rsapiProvider, invokeWithRetryService);
 		}
 	}
 }

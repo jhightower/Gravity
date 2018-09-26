@@ -11,6 +11,7 @@ namespace GravityDemo
 	public partial class Program
 	{
 
+		#region RecursiveDelete
 		static void Delete()
 		{
 			var randomNumber = RandomNumberUtil.RandomNumber();
@@ -27,8 +28,16 @@ namespace GravityDemo
 				gravityLevel1.GravityLevel2Childs.Add(gravityLevel2Child);
 			}
 			var artifactId = rsapiDao.Insert<GravityLevelOne>(gravityLevel1, Gravity.Base.ObjectFieldsDepthLevel.FullyRecursive);
-			Console.ReadKey();
-			rsapiDao.Delete<GravityLevelOne>(artifactId, Gravity.Base.ObjectFieldsDepthLevel.OnlyParentObject);
+
+			rsapiDao.Delete<GravityLevelOne>(artifactId, Gravity.Base.ObjectFieldsDepthLevel.FullyRecursive);
 		}
+
+		#endregion
+
+		static void Delete(int artifactId)
+		{
+			rsapiDao.Delete<GravityLevelOne>(artifactId, Gravity.Base.ObjectFieldsDepthLevel.FullyRecursive);
+		}
+
 	}
 }
